@@ -4,7 +4,7 @@ Commands
 =====
 
 * ```>h <tags>```: Find a random image from gelbooru. Tags are optional.<br>
-* ```>hloop <tags> <time between loops>```: Constantly returns images from gelbooru. Tags and timer are optional.<br>
+* ```>hloop <tags> <time between loops>```: Periodicly returns images from gelbooru until stopped. Only one loop can run at a time. If a new loop while another is running, the running loop will be updated with the new loop. Tags and timer are optional.<br>
 * ```>hloop stop```: Stops the hloop.
 
 Installation
