@@ -12,5 +12,5 @@ Installation
 
 1) Clone this repository
 2) Replace ```<-- Enter Your Bot Token Here! -->``` in yabai-chan.js with a bot token generated on discord developer website.
-3) Open a console in the yabai-chan folder and run "npm install"
-4) To start, run node yabai-chan.js or npm test
+3) Open a console in the yabai-chan folder and run ```npm install```
+4) To start, run ```node yabai-chan.js``` or ```npm test```
