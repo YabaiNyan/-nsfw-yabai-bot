@@ -12,6 +12,9 @@ const PREFIX = '>'
 const tags = ["loli","bottomless","large_breasts","pussy","nipples"]
 const randomAmount = 1000
 
+//set hloop to not running
+var hloop = false
+
 client.on('ready', () => {
     console.log('Yabai-Chan is ready! <3')
 })
@@ -50,10 +53,15 @@ client.on('message', async message => {
         if (arguments.length > 0) {
             if (arguments[0] == "stop"){
                 clearInterval(hloop);
-                return message.channel.send("Yabai-Chan will stop the loop! <3")
+                hloop = false;
+                return message.channel.send("Yabai-Chan is stoping the loop! <3")
             }
         }
-        message.channel.send("Yabai is readying the hloop!")
+        if (hloop != false){
+            clearInterval(hloop);
+            hloop = false;
+        }
+        message.channel.send("Yabai is readying the images!")
         var hloopArgs = arguments
         if(isNaN(hloopArgs[hloopArgs.length-1])){
             var hloopWait = 5000
