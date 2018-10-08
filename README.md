@@ -1,4 +1,5 @@
-#WARNING NSFW
+WARNING NSFW
+=====
 Yabai-Chan is a gelbooru discord bot!
 
 Commands
